@@ -1,0 +1,34 @@
+package com.takim4.bagisProject.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.takim4.bagisProject.service.GrantorService;
+
+public class InstitutionsController {
+
+	@Autowired
+    GrantorService grantorService;
+	
+	 @GetMapping(value = "getAll")
+	    public ResponseEntity<?> getAll(){
+	        return ResponseEntity.ok(grantorService.getAll());
+	    }
+
+	    @GetMapping(value = "get")
+	    public ResponseEntity<?> get(@RequestParam int id){
+	        return ResponseEntity.ok(grantorService.get(id));
+	    }
+
+	    @PutMapping(value = "update")
+	    public ResponseEntity<?> update(@RequestBody Musteri musteri){
+	        return ResponseEntity.ok(grantorService.update(musteri));
+	    }
+
+	    @DeleteMapping(value = "delete")
+	    public ResponseEntity<?> delete(@RequestParam int id){
+	        return ResponseEntity.ok(grantorService.delete(id));
+	    }
+
+}

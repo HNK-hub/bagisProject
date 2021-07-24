@@ -1,0 +1,23 @@
+package com.takim4.bagisProject.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Data
+@Table(name="grantor")
+public class Grantor {
+
+	@Column(name="grantor_id")
+	private int grantorId;
+	
+	@Column(name="identity")
+	private String identity;
+	
+	@Column(name="grantorName")
+	private String grantorName;
+}

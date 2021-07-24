@@ -1,0 +1,17 @@
+package com.takim4.bagisProject.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+import lombok.Data;
+
+@Entity
+@Table(name = "institutions")
+@Data
+public class institutions implements User {
+
+	private int institutionsId;
+	private String institutionsname;
+	private String dutyNo;
+}

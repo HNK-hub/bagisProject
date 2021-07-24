@@ -1,0 +1,23 @@
+package com.takim4.bagisProject.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@NoArgsConstructor
+@Data
+@Entity
+@Table(name="institutions")
+public class institutions {
+
+	@Column(name="institutions_id")
+	private int institutionsId;
+	
+	@Column(name="institutionsname")
+	private String institutionsname;
+	
+	@Column(name="dutyNo")
+	private String dutyNo;
+}

@@ -1,0 +1,12 @@
+package com.takim4.bagisProject.model;
+
+public class User {
+
+	private int id;
+	private String declaration;
+	private String mail;
+	private String phone; 
+	private String paymentTotal;
+	private String grantorType;
+
+}

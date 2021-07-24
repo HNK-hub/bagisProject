@@ -1,0 +1,9 @@
+package com.takim4.bagisProject.exception;
+
+public class GrantorNotFoundException extends NotFoundException{
+
+	public GrantorNotFoundException(Integer id) {
+	
+    		
+	}
+}

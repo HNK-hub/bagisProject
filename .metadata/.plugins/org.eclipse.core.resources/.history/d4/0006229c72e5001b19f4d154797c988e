@@ -1,0 +1,14 @@
+package com.takim4.bagisProject;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BagisProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BagisProjectApplication.class, args);
+		
+	}
+
+}

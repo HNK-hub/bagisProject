@@ -1,0 +1,6 @@
+package com.takim4.bagisProject.exception;
+
+public class InstitutionsNotFoundException extends {
+
+	
+}

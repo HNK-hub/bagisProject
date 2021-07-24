@@ -1,0 +1,9 @@
+package com.takim4.bagisProject.controller;
+
+import com.takim4.bagisProject.service.GrantorService;
+
+public class InstitutionsController {
+
+	@Autowired
+    GrantorService grantorService;
+}
